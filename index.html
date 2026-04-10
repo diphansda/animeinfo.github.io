@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Meri First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeInfo | Official Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Hello World 🔥</h1>
-<p>Ye meri pehli website hai</p>
+
+    <nav class="navbar">
+        <div class="logo">ANIME<span>INFO</span></div>
+        
+        <div class="lang-container">
+            <select id="langSelect">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="jp">Japanese</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+    </nav>
+
+    <header>
+        <div class="search-box">
+            <input type="text" id="animeInput" placeholder="Search verified anime...">
+            <button id="searchBtn">SEARCH</button>
+        </div>
+    </header>
+
+    <main id="results" class="anime-grid"></main>
+
+    <div id="animeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modalBody" class="netflix-layout"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
